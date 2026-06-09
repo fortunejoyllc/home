@@ -142,11 +142,7 @@ header{
     background-size:cover;
     background-position:center;
 
-    filter:
-    contrast(108%)
-    saturate(108%)
-    brightness(104%);
-
+    filter:contrast(108%) saturate(108%) brightness(104%);
     z-index:-1;
 }
 
@@ -285,12 +281,7 @@ header{
 .about-image img{
     width:100%;
     border-radius:25px;
-
-    filter:
-    contrast(108%)
-    brightness(105%)
-    saturate(108%);
-
+    filter:contrast(108%) brightness(105%) saturate(108%);
     box-shadow:var(--shadow);
 }
 
@@ -322,10 +313,6 @@ header{
     box-shadow:var(--shadow);
 }
 
-.manager-box h4{
-    margin-bottom:10px;
-}
-
 /* =======================
    CONTACT STRIP
 ======================= */
@@ -341,10 +328,6 @@ header{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:30px;
     text-align:center;
-}
-
-.contact-item h3{
-    margin-bottom:10px;
 }
 
 /* =======================
@@ -371,45 +354,21 @@ footer img{
 ======================= */
 
 @media(max-width:1000px){
-
-.about-wrap{
-    grid-template-columns:1fr;
-}
-
-.hero h1{
-    font-size:3.5rem;
-}
-
-.nav-links{
-    display:none;
-}
-
-.phone-btn{
-    display:none;
-}
+.about-wrap{grid-template-columns:1fr;}
+.hero h1{font-size:3.5rem;}
+.nav-links{display:none;}
+.phone-btn{display:none;}
 }
 
 @media(max-width:600px){
-
-.hero{
-    padding-top:150px;
-}
-
-.hero h1{
-    font-size:2.8rem;
-}
-
-.section-title h2{
-    font-size:2.2rem;
-}
-
-.about-text h2{
-    font-size:2.5rem;
-}
+.hero h1{font-size:2.8rem;}
+.section-title h2{font-size:2.2rem;}
+.about-text h2{font-size:2.5rem;}
 }
 
 </style>
 </head>
+
 <body>
 
 <header>
@@ -417,7 +376,6 @@ footer img{
 
         <div class="logo">
             <img src="logo.png" alt="Fortune Joy Logo">
-
             <div class="logo-text">
                 <h3>Fortune Joy LLC</h3>
                 <span>Unlock Your Dream Home</span>
@@ -455,19 +413,22 @@ footer img{
         <p>
             Fortune Joy LLC provides dependable property management
             and real estate services throughout Tallahassee, Florida.
-            We focus on protecting investments, supporting owners,
-            and helping clients find quality locations.
         </p>
 
-       <div class="hero-buttons">
-           <a href="https://fortunejoyllc.github.io/viewproperties/" class="btn btn-primary">
-               View Locations
-           </a>
-           
-           <a href="#" class="btn btn-secondary">
-               Contact Us
-           </a>
-       </div>
+        <div class="hero-buttons">
+
+            <!-- UPDATED LINK -->
+            <a href="https://fortunejoyllc.github.io/viewproperties/" class="btn btn-primary">
+                View Locations
+            </a>
+
+            <a href="#" class="btn btn-secondary">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -483,32 +444,23 @@ footer img{
         <div class="card">
             <div class="card-icon">🏢</div>
             <h3>Property Management</h3>
-
-            <p>
-                Comprehensive management services designed
-                to maintain property value, streamline operations,
-                and support residents.
-            </p>
+            <p>Comprehensive management services designed to maintain property value.</p>
         </div>
 
         <div class="card">
             <div class="card-icon">📍</div>
             <h3>Property Sales</h3>
-
-            <p>
-                Assistance with marketing and selling locations
-                while maximizing exposure and value for owners.
-            </p>
+            <p>Assistance with marketing and selling locations effectively.</p>
         </div>
 
         <div class="card">
             <div class="card-icon">🔎</div>
             <h3>View Locations</h3>
+            <p>Browse available properties and listings.</p>
 
-            <p>
-                Browse available locations and discover spaces
-                that match your needs and preferences.
-            </p>
+            <a href="https://fortunejoyllc.github.io/viewproperties/" class="btn btn-primary">
+                View Locations
+            </a>
         </div>
 
     </div>
@@ -527,25 +479,17 @@ footer img{
 
             <h5>ABOUT FORTUNE JOY LLC</h5>
 
-            <h2>
-                Your Property.
-                <span>Our Priority.</span>
-            </h2>
+            <h2>Your Property. <span>Our Priority.</span></h2>
 
             <p>
-                Fortune Joy LLC is committed to providing reliable,
-                transparent, and professional property management
-                services throughout Tallahassee. Whether you are
-                looking to manage, sell, or locate a property,
-                our goal is to deliver exceptional service.
+                Fortune Joy LLC provides professional property management services
+                throughout Tallahassee, Florida.
             </p>
 
             <div class="manager-box">
-
                 <h4>Property Manager</h4>
                 <p><strong>Rajesh Kumar</strong></p>
                 <p>850-270-8205</p>
-
             </div>
 
         </div>
@@ -555,49 +499,17 @@ footer img{
 </section>
 
 <section class="contact-strip">
-
     <div class="contact-grid">
-
-        <div class="contact-item">
-            <h3>Property Manager</h3>
-            <p>Rajesh Kumar</p>
-        </div>
-
-        <div class="contact-item">
-            <h3>Phone</h3>
-            <p>850-270-8205</p>
-        </div>
-
-        <div class="contact-item">
-            <h3>Address</h3>
-            <p>
-                2800 S Adams St<br>
-                Suite #7450<br>
-                Tallahassee, FL 32314
-            </p>
-        </div>
-
+        <div><h3>Manager</h3><p>Rajesh Kumar</p></div>
+        <div><h3>Phone</h3><p>850-270-8205</p></div>
+        <div><h3>Address</h3><p>2800 S Adams St, Tallahassee, FL</p></div>
     </div>
-
 </section>
 
 <footer>
-
     <img src="logo.png" alt="Fortune Joy Logo">
-
     <h3>Fortune Joy LLC</h3>
-
-    <p>
-        2800 S Adams St, Suite #7450,
-        Tallahassee, Florida 32314
-    </p>
-
-    <br>
-
-    <p>
-        © 2026 Fortune Joy LLC. All Rights Reserved.
-    </p>
-
+    <p>© 2026 Fortune Joy LLC</p>
 </footer>
 
 </body>
