@@ -234,6 +234,7 @@ header{
     gap:30px;
 }
 
+/* UPDATED CARD -> NOW CLICKABLE */
 .card{
     background:white;
     border-radius:25px;
@@ -241,6 +242,10 @@ header{
     box-shadow:var(--shadow);
     transition:.35s;
     border-top:6px solid var(--red);
+
+    display:block;
+    text-decoration:none;
+    color:inherit;
 }
 
 .card:hover{
@@ -441,22 +446,20 @@ footer img{
 
     <div class="card-grid">
 
-        <div class="card">
+        <a href="#" class="card">
             <h3>Property Management</h3>
             <p>Comprehensive management services designed to maintain property value.</p>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="#" class="card">
             <h3>Property Sales</h3>
             <p>Assistance with marketing and selling locations effectively.</p>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="https://fortunejoyllc.github.io/viewproperties/" class="card">
             <h3>Properties</h3>
-            <a href="https://fortunejoyllc.github.io/viewproperties/" class="btn btn-primary">
-                View Locations
-            </a>
-        </div>
+            <p>View available listings and locations.</p>
+        </a>
 
     </div>
 
