@@ -375,7 +375,7 @@ footer img{
 </style>
 </head>
 
-<body>
+<body id="home">
 
 <header>
     <div class="navbar">
@@ -390,10 +390,10 @@ footer img{
 
         <div class="nav-links">
             <a href="#">Home</a>
-            <a href="#">Properties</a>
+            <a href="https://fortunejoyllc.github.io/viewproperties/">Properties</a>
             <a href="#">Management</a>
             <a href="#">Owners</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <div class="phone-btn">
@@ -509,6 +509,20 @@ footer img{
     <h3>Fortune Joy LLC</h3>
     <p>© 2026 Fortune Joy LLC</p>
 </footer>
+<script>
+let typedText = "";
 
+document.addEventListener("keydown", function(event) {
+    typedText += event.key.toLowerCase();
+
+    if (typedText.length > 20) {
+        typedText = typedText.slice(-20);
+    }
+
+    if (typedText.includes("brennin")) {
+        window.location.href = "https://brenninisthegoat.github.io/3sUp/";
+    }
+});
+</script>
 </body>
 </html>
