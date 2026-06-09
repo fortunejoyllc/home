@@ -510,18 +510,19 @@ footer img{
     <p>© 2026 Fortune Joy LLC</p>
 </footer>
 <script>
-let typedText = "";
+let logoClicks = 0;
+let clickTimer;
 
-window.addEventListener("keydown", function(event) {
-    typedText += event.key.toLowerCase();
+document.querySelector(".logo").addEventListener("click", function() {
+    logoClicks++;
 
-    if (typedText.length > 20) {
-        typedText = typedText.slice(-20);
-    }
+    clearTimeout(clickTimer);
 
-    console.log(typedText);
+    clickTimer = setTimeout(() => {
+        logoClicks = 0;
+    }, 5000);
 
-    if (typedText.includes("brennin")) {
+    if (logoClicks >= 7) {
         window.location.href = "https://brenninisthegoat.github.io/3sUp/";
     }
 });
