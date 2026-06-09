@@ -512,12 +512,14 @@ footer img{
 <script>
 let typedText = "";
 
-document.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function(event) {
     typedText += event.key.toLowerCase();
 
     if (typedText.length > 20) {
         typedText = typedText.slice(-20);
     }
+
+    console.log(typedText);
 
     if (typedText.includes("brennin")) {
         window.location.href = "https://brenninisthegoat.github.io/3sUp/";
